@@ -1,0 +1,20 @@
+{
+  "name": "thedesk-notice",
+  "version": "1.0.0",
+  "description": "TheDesk Notice System by WebSocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cutls <web-pro@cutls.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "megalodon": "^4.1.1",
+    "websocket": "^1.0.32"
+  },
+  "devDependencies": {
+    "@types/websocket": "^1.0.5",
+    "typescript": "^4.9.3"
+  }
+}
