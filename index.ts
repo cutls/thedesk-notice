@@ -58,7 +58,7 @@ const tooter = async () => {
     if (!BASE_URL || !access_token) return
     const toot = `Current online user: ${ct}`
     const client = generator('mastodon', BASE_URL, access_token)
-    client.postStatus(toot)
+    client.postStatus(toot, { visibility: 'unlisted' })
 }
-setInterval(() => {tooter()}, 1000 * 60 * 60)
-setTimeout(() => {tooter()}, 1000 * 30)
+setInterval(() => { tooter() }, 1000 * 60 * 60)
+setTimeout(() => { tooter() }, 1000 * 30)
